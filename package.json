@@ -5,6 +5,11 @@
   "types": "dist/index.d.ts",
   "author": "Ramzan Chasygov <theliketurbo@gmail.com>",
   "license": "MIT",
+  "keywords": [
+    "javascript",
+    "typescript",
+    "setinterval"
+  ],
   "scripts": {
     "dev": "nodemon",
     "build": "webpack --mode production"
