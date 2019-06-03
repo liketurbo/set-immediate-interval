@@ -1,0 +1,11 @@
+{
+  "name": "immediate-interval",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Ramzan Chasygov <theliketurbo@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "devDependencies": {
+    "typescript": "^3.5.1"
+  }
+}
