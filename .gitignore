@@ -4,5 +4,5 @@ node_modules/
 # VSCode config
 .vscode/
 
-# Source maps
-*.js.map
+# Production
+dist/

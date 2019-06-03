@@ -1,6 +1,5 @@
 const path = require('path');
 const merge = require('webpack-merge');
-const TerserPlugin = require('terser-webpack-plugin');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -10,10 +9,19 @@ const commonConfig = {
   },
   output: {
     filename: '[name].js',
-    path: path.join(__dirname, 'dist')
+    path: path.join(__dirname, 'dist'),
+    library: 'setImmediateInterval',
+    libraryTarget: 'umd',
+    globalObject: 'this',
+    libraryExport: 'default'
   },
   module: {
-    rules: [{ test: /\.ts$/, use: 'ts-loader' }]
+    rules: [
+      {
+        test: /\.ts$/,
+        use: ['ts-loader']
+      }
+    ]
   },
   resolve: {
     extensions: ['.ts', '.js']
@@ -26,17 +34,6 @@ const developmentConfig = {
 };
 
 const productionConfig = {
-  optimization: {
-    minimizer: [
-      new TerserPlugin({
-        terserOptions: {
-          output: {
-            comments: false
-          }
-        }
-      })
-    ]
-  },
   plugins: [new CleanWebpackPlugin()]
 };
 
