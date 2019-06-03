@@ -1,0 +1,7 @@
+{
+  "exec": "webpack-dev-server --mode development",
+  "watch": ["./webpack.config.js"],
+  "env": {
+    "NODE_ENV": "development"
+  }
+}

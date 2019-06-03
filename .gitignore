@@ -3,3 +3,6 @@ node_modules/
 
 # VSCode config
 .vscode/
+
+# Production
+dist/
