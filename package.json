@@ -1,11 +1,10 @@
 {
-  "name": "immediate-interval",
+  "name": "set-immediate-interval",
   "version": "1.0.0",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Ramzan Chasygov <theliketurbo@gmail.com>",
   "license": "MIT",
-  "private": true,
   "scripts": {
     "dev": "nodemon",
     "build": "webpack --mode production"
