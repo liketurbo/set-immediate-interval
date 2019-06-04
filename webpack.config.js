@@ -8,7 +8,7 @@ const commonConfig = {
     index: path.join(__dirname, 'src', 'index.ts')
   },
   output: {
-    filename: '[name].min.js',
+    filename: '[name].js',
     path: path.join(__dirname, 'dist'),
     library: 'setImmediateInterval',
     libraryTarget: 'umd',
