@@ -4,4 +4,4 @@ node_js:
   - node
 
 script:
-  - yarn coverage --coverageReporters=text-lcov | coveralls
+  - yarn test:coverage --coverageReporters=text-lcov | coveralls

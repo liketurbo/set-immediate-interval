@@ -1,11 +1,17 @@
 # Node.js modules
-node_modules/
+/node_modules/
 
 # VSCode config
-.vscode/
+/.vscode/
 
 # Production
-dist/
+/dist/
 
 # Testing
-coverage
+/coverage/
+
+# Cache
+/.rts2_cache_cjs/
+/.rts2_cache_esm/
+/.rts2_cache_umd/
+/.rts2_cache_system/
