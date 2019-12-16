@@ -1,6 +1,6 @@
 {
   "name": "set-immediate-interval",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "license": "MIT",
   "author": "Ramzan Chasygov",
   "main": "dist/index.js",
